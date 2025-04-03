@@ -1,11 +1,10 @@
 "use client";
 
-import { RootState } from "@/store/types";
+import { useAppSelector } from "@/store/types";
 import { ChevronDown, Menu, Search, ShoppingCart, User, X } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { useSelector } from "react-redux";
 
 interface HeaderProps {
   title: string;
@@ -17,7 +16,7 @@ const Header = () => {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const router = useRouter();
 
-  const { items } = useSelector((state: RootState) => state.cart);
+  const { items } = useAppSelector((state) => state.cart);
 
   const navigation: HeaderProps[] = [
     /*     {

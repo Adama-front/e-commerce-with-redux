@@ -58,7 +58,7 @@ const ListProducts = () => {
     );
 
   return (
-    <section className="bg-white text-black py-12">
+    <section className="bg-white text-black py-12" id="products">
       <div className="max-w-6xl mx-auto  px-4 sm:px-6 lg:px-8">
         <div className="w-full flex flex-col items-center justify-center gap-y-6">
           <div className="flex w-full items-center justify-center">

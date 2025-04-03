@@ -17,7 +17,8 @@ const CardProduct = ({ product }: ProductCardProps) => {
         id: product.id.toString(),
         name: product.title,
         price: product.price,
-        quantity: 1
+        quantity: 1,
+        image: product.image
       })
     );
   };
